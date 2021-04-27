@@ -1,0 +1,43 @@
+body {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin: 20px;
+    /* box-sizing: border-box; */
+}
+
+#logo {
+    margin: 15px;
+}
+
+.topnav a {
+    padding: 20px;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    font-size: 0.6rem;
+}
+
+.content {
+    display: flex;
+}
+
+main {
+    width: 100%;
+    border-top: 1px solid rgba(146, 145, 145, 0.411);
+    padding: 10px;
+}
