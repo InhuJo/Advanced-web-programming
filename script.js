@@ -9,6 +9,10 @@ $(window).ready(function() {
       typingBool = true;
       var tyInt = setInterval(typing, 120); // 반복동작
     }
+
+    setTimeout(() => {
+      $('.enter').fadeIn();
+    }, 5000);
   
     function typing() {
       if (typingIdx < typingTxt.length) {

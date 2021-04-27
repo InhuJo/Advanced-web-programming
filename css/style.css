@@ -1,43 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Great+Vibes&family=Parisienne&display=swap');
+
 body {
     display: flex;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    background: rgb(63, 63, 66);
+    justify-content: center;
 }
 
 header {
     display: flex;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    margin: 20px;
+    margin-top: 50px;
+    height: 40px;
     /* box-sizing: border-box; */
-}
-
-#logo {
-    margin: 15px;
-}
-
-.topnav a {
-    padding: 20px;
 }
 
 footer {
     position: absolute;
+    color:white;
     right: 0;
     bottom: 0;
     padding: 15px;
     font-size: 0.6rem;
 }
 
-.content {
-    display: flex;
+input[type="radio"] {
+    display: none;
 }
 
-main {
+input[type="radio"] + label {
+    color: white;
+    padding: 20px;
+    background-color:rgb(71, 71, 73);
+    font-family: 'Bitter', serif;
+    cursor: pointer;
+}
+
+input[type="radio"] + label:hover {
+    background-color:rgb(78, 78, 78);
+}
+
+input[type="radio"]:checked + label {
+    background: rgb(71, 71, 85);
+    border-top: 1px solid white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 95%;
+}
+
+.content {
+    display: flex;
     width: 100%;
-    border-top: 1px solid rgba(146, 145, 145, 0.411);
-    padding: 10px;
+    height: 100%;
+    background-color: rgb(71, 71, 85);
+}
+
+.topnav_text {
+    display: inline;
+    margin-left: 30px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Parisienne', cursive;
 }

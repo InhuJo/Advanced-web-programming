@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
@@ -18,13 +20,13 @@ footer {
 .container {
     display: flex;
     width: 500px;
-    padding: 10px;
     border-bottom: 1px solid white;
 }
 
 .search {
     display: inline;
     color: white;
+    margin-bottom: 10px;
 }
 
 .intro-text {
@@ -35,7 +37,8 @@ footer {
     display: inline-block;
     color: white;
     font-size: 3rem;
-    margin-left: 30px;
+    font-family: 'Bitter', serif;
+    margin-left: 25px;
     animation-name: cursor;
     animation-duration: 0.4s;
     animation-iteration-count: infinite;
@@ -54,9 +57,22 @@ footer {
 }
 
 .enter {
+    position: relative;
+    left: 220px;
+    top: 20px;
     color: white;
     margin: 30px;
     font-size: 1.3rem;
-    background: none;
+    background: rgb(63, 63, 66);
     border: none;
+    display: none;
+}
+
+.enter::before {
+    content: "ENTER";
+}
+
+.enter:hover::before{
+    content: "٩( 'ω' )و";
+    cursor: pointer;
 }
