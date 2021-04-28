@@ -72,7 +72,8 @@ footer {
     content: "ENTER";
 }
 
-.enter:hover::before{
+.enter:hover::before {
     content: "٩( 'ω' )و";
     cursor: pointer;
 }
+

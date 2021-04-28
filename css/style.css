@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Great+Vibes&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap');
 
 body {
     display: flex;
     background: rgb(63, 63, 66);
     justify-content: center;
-}
-
-header {
-    display: flex;
-    margin-top: 50px;
-    height: 40px;
-    /* box-sizing: border-box; */
 }
 
 footer {
@@ -27,6 +21,7 @@ input[type="radio"] {
 }
 
 input[type="radio"] + label {
+    display: inline-block;
     color: white;
     padding: 20px;
     background-color:rgb(71, 71, 73);
@@ -43,24 +38,37 @@ input[type="radio"]:checked + label {
     border-top: 1px solid white;
 }
 
+.conbox {
+    background-color: rgb(71, 71, 85);
+    display: none;
+    height: 85%;
+}
+input[id="main"]:checked ~ .c1 {display: block;}
+input[id="music"]:checked ~ .c2 {display: block;}
+input[id="movie"]:checked ~ .c3 {display: block;}
+
 .container {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+    margin-top: 50px;
+    width: 70%;
     height: 95%;
 }
 
-.content {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(71, 71, 85);
+.c1 {
+    /* background-image: url('../source/main_image.png'); */
+    background-size: 100% 100%;
+    font-family: 'Bitter', serif;
+    color: white;
 }
 
-.topnav_text {
-    display: inline;
+.intro {
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    left: 7%;
+    top: 20%;
+    padding-top: 20px;
+}
+
+.intro-text {
     margin-left: 30px;
-    color: whitesmoke;
-    font-size: 20px;
-    font-family: 'Parisienne', cursive;
 }
