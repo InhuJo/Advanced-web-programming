@@ -16,50 +16,36 @@ footer {
     font-size: 0.6rem;
 }
 
-input[type="radio"] {
-    display: none;
-}
-
-input[type="radio"] + label {
-    display: inline-block;
-    color: white;
-    padding: 20px;
-    background-color:rgb(71, 71, 73);
-    font-family: 'Bitter', serif;
-    cursor: pointer;
-}
-
-input[type="radio"] + label:hover {
-    background-color:rgb(78, 78, 78);
-}
-
-input[type="radio"]:checked + label {
-    background: rgb(71, 71, 85);
-    border-top: 1px solid white;
-}
-
 .conbox {
     background-color: rgb(71, 71, 85);
-    display: none;
     height: 85%;
+    font-family: 'Bitter', serif;
+    color: white;
 }
-input[id="main"]:checked ~ .c1 {display: block;}
-input[id="music"]:checked ~ .c2 {display: block;}
-input[id="movie"]:checked ~ .c3 {display: block;}
 
 .container {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 70%;
     height: 95%;
 }
 
-.c1 {
-    /* background-image: url('../source/main_image.png'); */
-    background-size: 100% 100%;
-    font-family: 'Bitter', serif;
+.topnav_btn {
+    width: 100px;
     color: white;
+    padding: 20px;
+    background-color:rgb(71, 71, 73);
+    font-family: 'Bitter', serif;
+    font-size: 1rem;
+    border:none;
+    cursor: pointer;
 }
 
+.topnav_btn:hover {
+    background-color:rgb(78, 78, 78);
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* main */
 .intro {
     position: relative;
     display: flex;
@@ -71,4 +57,107 @@ input[id="movie"]:checked ~ .c3 {display: block;}
 
 .intro-text {
     margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+/* music */
+.desc {
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.637);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.desc:hover {
+    opacity: 1;
+    transition: opacity 0.7s;
+}
+
+.desc-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+}
+
+/* movie */
+.movielist {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    font-size: 0;
+    margin-left: 3%;
+}
+
+ul > li {
+    margin-top: 3.5%;
+    display:inline-block;
+    vertical-align: top;
+    width:25%;
+}
+
+ul > li > a {
+    display: block;
+    width:auto;
+    text-decoration:none;
+    margin: 5px;
+}
+
+ul > li > a > .screen {
+    position: relative;
+    overflow: hidden;
+}
+
+ul > li > a > .screen::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.35s;
+}
+
+ul > li > a:hover .screen::after {
+    opacity: 1;
+}
+
+ul > li > a > .screen > .top {
+    position: absolute;
+    bottom: 150%;
+    left: 10px;
+    z-index: 2;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+ul > li > a > .screen > .bottom {
+    position: absolute;
+    top: 150%;
+    left: 10px;
+    z-index: 2;
+    color: #fff;
+    font-size: 11px;
+    transition: all 0.85s;
+}
+
+ul > li > a > .screen > img {
+    width: 100%;
+}
+
+ul > li > a:hover .top {
+    bottom: 60%;
+}
+
+ul > li > a:hover .bottom {
+    top: 45%;
 }

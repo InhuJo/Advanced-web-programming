@@ -1,0 +1,74 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+    <meta charset="utf8mb4">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <title>inu</title>
+    <style>
+        #movie {
+            background: rgb(71, 71, 85);
+            border-top: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="topnav_btn" id="main" onclick="location.href='main.html'">MAIN</button>
+        <button class="topnav_btn" id="music" onclick="location.href='music.html'">MUSIC</button>
+        <button class="topnav_btn" id="movie" onclick="location.href='movie.html'">MOVIE</button>
+        <div class="conbox">
+            <div class="movielist">
+                <ul>
+                    <script>
+                        var i;
+                        for(i = 0; i < 4; i++) {
+                            document.write(
+                                '<li>'
+                                +'<a href="">'
+                                +'<div class="screen">'
+                                +'<div class="top">'+ movies[i].title +'</div>'
+                                +'<div class="bottom">Director: '+ movies[i].director
+                                +'<br>Starring: ' + movies[i].starring[0]
+                                +',<br>' + movies[i].starring[1] + ', ' + movies[i].starring[2]
+                                +'<br>Running time: ' + movies[i].runningTime + ' minutes'
+                                +'<br>Release date: ' + movies[i].release
+                                +'</div>'
+                                +'<img src="../source/movie/'+ movies[i].src + '"style="width: 200px;">'
+                                +'</div></a></li>'
+                            )}
+                    </script>
+                </ul>
+                <ul>
+                    <script>
+                        var i;
+                        for(i = 4; i < 8; i++) {
+                            document.write(
+                                '<li>'
+                                +'<a href="">'
+                                +'<div class="screen">'
+                                +'<div class="top">'+ movies[i].title +'</div>'
+                                +'<div class="bottom">Director: '+ movies[i].director
+                                +'<br>Starring: ' + movies[i].starring[0]
+                                +',<br>' + movies[i].starring[1] + ', ' + movies[i].starring[2]
+                                +'<br>Running time: ' + movies[i].runningTime + ' minutes'
+                                +'<br>Release date: ' + movies[i].release
+                                +'</div>'
+                                +'<img src="../source/movie/'+ movies[i].src + '"style="width: 200px;">'
+                                +'</div></a></li>'
+                            )}
+                    </script>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            Copyright 2020. Joinhu. All right reserved.<p style="display: inline;">&#x1F33F;</p>
+        </footer>
+    </div>
+</body>
+
+</html>

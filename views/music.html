@@ -1,0 +1,151 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="utf8mb4">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>inu</title>
+    <style>
+        .swiper-slide {
+            margin-top: 155px;
+            background-position: center;
+            background-size: cover;
+            width: 330px;
+            height: 330px;
+        }
+
+        #music {
+            background: rgb(71, 71, 85);
+            border-top: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="topnav_btn" id="main" onclick="location.href='main.html'">MAIN</button>
+        <button class="topnav_btn" id="music" onclick="location.href='music.html'">MUSIC</button>
+        <button class="topnav_btn" id="movie" onclick="location.href='movie.html'">MOVIE</button>
+        <div class="conbox">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('../source/music/music_1.jfif');">
+                        <div class="desc">
+                            <div class="desc-text">
+                                Title: Moments<br>
+                                Artist: Jon Vinyl<br>
+                                Release: 2020.02.05
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../source/music/music_2.jfif');">
+                        <div class="desc">
+                            <div class="desc-text">
+                                Title: Like Mike<br>
+                                Artist: Tone Stith<br>
+                                Release: 2018.12.14
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../source/music/music_3.jfif');">
+                        <div class="desc">
+                            <div class="desc-text">
+                                Title: One More Dance<br>
+                                Artist:  Alexander Oscar<br>
+                                Release: 2021.03.19
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../source/music/music_4.jfif');">
+                        <div class="desc">
+                            <div class="desc-text">
+                                Title: Paradise<br>
+                                Artist:  Bazzi<br>
+                                Release: 2019.04.05
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../source/music/music_5.jfif');">
+                        <div class="desc">
+                            <div class="desc-text">
+                                Title: Say So<br>
+                                Artist: Doja Cat<br>
+                                Release: 2019.11.07
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../source/music/music_6.jfif');">
+                        <div class="desc">
+                            <div class="desc-text">
+                                Title: Peaches<br>
+                                Artist: Justin Bieber<br>
+                                Release: 2021.03.19
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../source/music/music_7.jfif');">
+                        <div class="desc">
+                            <div class="desc-text">
+                                Title: Taylor Swift<br>
+                                Artist: willow<br>
+                                Release: 2020.12.10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../source/music/music_8.jpg');">
+                        <div class="desc">
+                            <div class="desc-text">
+                                Title: Travis Garland<br>
+                                Artist: Didn’t Stand A Chance<br>
+                                Release: 2012.10.22
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../source/music/music_9.png');">
+                        <div class="desc">
+                            <div class="desc-text">
+                                Title: More & More<br>
+                                Artist: Finding Hope<br>
+                                Release: 2018.09.27
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../source/music/music_10.jfif');">
+                        <div class="desc">
+                            <div class="desc-text">
+                                Title: She likes spring, I prefer winter<br>
+                                Artist: slchld<br>
+                                Release: 2019.09.27
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        effect: 'coverflow',
+                        grabCursor: true,
+                        centeredSlides: true,
+                        slidesPerView: 'auto',
+                        initialSlide: 4,
+                        coverflowEffect: {
+                            rotate: 50,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 1,
+                            slideShadows: true,
+                        },
+                    });
+                </script>
+            </div>
+            <footer>
+                Copyright 2020. Joinhu. All right reserved.<p style="display: inline;">&#x1F33F;</p>
+            </footer>
+        </div>
+</body>
+
+</html>
