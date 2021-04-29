@@ -9,7 +9,7 @@ body {
 
 footer {
     position: absolute;
-    color:white;
+    color: white;
     right: 0;
     bottom: 0;
     padding: 15px;
@@ -24,7 +24,7 @@ footer {
 }
 
 .container {
-    margin-top: 30px;
+    padding-top: 40px;
     width: 70%;
     height: 95%;
 }
